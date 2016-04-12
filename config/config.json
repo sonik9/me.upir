@@ -1,0 +1,26 @@
+{
+  "env":{
+    "dev":"development",
+    "prod":"production"
+  },
+  "mongoose": {
+    "uri": "mongodb://localhost/FG",
+    "options": {
+      "server": {
+        "socketOptions": {
+          "keepAlive": 1
+        }
+      }
+    }
+  },
+  "session": {
+    "secret": "secret",
+    "key": "sid",
+    "cookie": {
+      "path": "/",
+      "httpOnly": true,
+      "maxAge": null
+    }
+  }
+
+}
