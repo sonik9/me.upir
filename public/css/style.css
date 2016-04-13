@@ -11,9 +11,11 @@ body {
     /*font: 15px 'Raleway', sans-serif;*/
     font: 15px 'Open Sans';
 }
-hr{
+
+hr {
     width: 300px;
 }
+
 h1,
 h2,
 h3,
@@ -24,7 +26,7 @@ h4 {
 
 h1 {
     color: #fff;
-    font-size: 7em;
+    font-size: 5.5em;
     letter-spacing: 3px;
     font-weight: bold;
 }
@@ -35,12 +37,12 @@ h2 {
 }
 
 h3 {
-    font-size: 2.533em;
+    font-size: 2.1em;
     letter-spacing: 2px;
 }
 
 h4 {
-    font-size: 2em;
+    font-size: 1.8em;
     letter-spacing: 2px;
 }
 
@@ -94,6 +96,7 @@ a:hover {
     margin-right: 20px;
     /*color: #4B8AB1;*/
 }
+
 /*Button styles*/
 
 .btn {
@@ -175,6 +178,7 @@ a:hover {
     outline: none !important;
     background: transparent;
 }
+
 /*grid system*/
 .row {
     clear: both;
@@ -206,9 +210,9 @@ a:hover {
     z-index: 1;
     color: white;
     font-family: 'Lato', sans-serif;
-    font-size: 1.15em;
+    /*font-size: 1.15em;*/
     font-weight: 400;
-    line-height: 60px;
+    /*line-height: 60px;*/
     letter-spacing: 1.3px;
 }
 
@@ -232,6 +236,7 @@ a:hover {
     width: 100%;
     border-radius: 0;
     margin: 0px auto 0;
+    padding: 0 15px;
     border: none;
     text-transform: uppercase;
     z-index: 1;
@@ -243,7 +248,6 @@ a:hover {
     letter-spacing: 1.3px;
     box-shadow: 1px 2px 5px grey;
     opacity: 0.8;
-    /*text-align: center;*/
 }
 
 .main-menu-scroll .main-menu-nav {
@@ -272,8 +276,7 @@ a:hover {
 .main-menu-scroll .logo {
     display: inline;
     padding: 0 10px;
-    font-size: 3em;
-    /*font-weight: bold;*/
+    font-size: 1.8em;
     font-family: "Arial Black", sans-serif;
     text-shadow: 0px 9px 1px black;
     color: transparent !important;
@@ -286,9 +289,8 @@ a:hover {
 
 .logo {
     padding: 0;
-    font-size: 1.4em;
-    /*font-weight: bold;*/
-    font-family: "Arial Black", sans-serif;
+    /*font-size: 1.4em;*/
+    /*font-family: "Arial Black", sans-serif;*/
     text-shadow: 0px 9px 2px white;
     color: transparent;
 }
@@ -306,14 +308,23 @@ a:hover {
 /*main-section*/
 
 .main-section {
-    height: 700px;
+    background-image: url('../images/me4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0;
     padding: 0;
+    display: block;
+    position: relative;
+    opacity: 0.9;
+
+    -webkit-animation: scale-effect 80s infinite linear;
+    -moz-animation: scale-effect 80s infinite linear;
+    animation: scale-effect 80s infinite linear;
 }
 
 .main-section .container {
     position: relative;
-    /*z-index: 1;*/
     height: 100%;
     width: 50%;
 }
@@ -324,7 +335,7 @@ a:hover {
 
 .main-section .main-section-title {
     position: absolute;
-    top: 40%;
+    top: 50%;
     padding-left: 20px;
     left: 0;
     display: block;
@@ -337,22 +348,12 @@ a:hover {
     /*color: #4B8AB1;*/
 }
 
-/*.main-section .main-section-title .main-section-logo {
-    display: block;
-    width: 130px;
-    height: auto;
-    margin: auto;
-    margin-bottom: 40px; }*/
 .main-section .main-section-title h1 {
-    margin: 0 0 70px;
-    font-size: 3.75em;
-    /*font-size: 60px;*/
-    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 3px;
 }
 
 .main-section .main-section-title h3 {
+    font-size: 2em;
     margin: 0 0 40px;
     color: #fff;
     letter-spacing: 2px;
@@ -361,7 +362,6 @@ a:hover {
 .main-section .main-section-title h5 {
     margin-top: 40px;
     color: #fff;
-    /*letter-spacing: px;*/
     font-weight: 100;
     line-height: 1.7em;
 }
@@ -404,31 +404,11 @@ a:hover {
     background-color: #ffffff;
 }
 
-.main-bg {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 0;
-    opacity: 0;
-}
-
-.main-bg.scale {
-    opacity: 0.9;
-    background-position: center;
-    background-size: cover;
-    -webkit-animation: scale-effect 80s infinite linear;
-    -moz-animation: scale-effect 80s infinite linear;
-    animation: scale-effect 80s infinite linear;
-}
-
 /*cv-section*/
 .timeline-section {
     display: block;
     text-align: center;
-    height:500px;
+    height: 500px;
 }
 
 /*project-section*/
@@ -439,18 +419,20 @@ a:hover {
     background-image: url('../images/bg-project.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height:500px;
-    color:#ffffff;
+    height: 500px;
+    color: #ffffff;
 }
-.project-section .section-description{
+
+.project-section .section-description {
     color: darkgrey;
 
 }
-.skill-section{
+
+.skill-section {
     display: block;
     text-align: center;
     position: relative;
-    height:500px;
+    height: 500px;
 }
 
 /*contact-section*/
@@ -570,7 +552,6 @@ footer {
     background-color: #000;
     display: inline;
     float: left;
-    /*padding-left: calc((100% - 1140px) / 2);*/
 }
 
 .container-footer .block-footer {
@@ -578,7 +559,6 @@ footer {
     padding: 20px;
     height: 100%;
     width: 30%;
-
 }
 
 .footer-mail,
@@ -586,25 +566,22 @@ footer {
 .footer-adress,
 .services-footer {
     display: block;
-    margin-bottom: 10px;
-    font-family: 'Lato', sans-serif;
+    margin-bottom: 5px;
     color: #fff;
-    font-size: 1.267em;
     font-weight: 300;
 }
 
 footer .social-network {
     margin: 10px;
-    /*line-height: 45px;*/
 }
 
 footer .social-network > li span {
     font-size: 1.75em;
 }
+
 footer .social-network li a:not(.btn) {
     color: #4B8AB1;
 }
-
 
 footer .footer-copyright p {
     display: inline-block;
@@ -613,16 +590,10 @@ footer .footer-copyright p {
 }
 
 footer h4 {
-    margin-top: 40px;
-    margin-bottom: 10px;
+    /*margin-top: 40px;*/
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-footer .line-lg {
-
 }
 
 footer .line-lg span {
@@ -778,20 +749,36 @@ footer a:hover {
 
 @media only screen and (max-width: 767px) {
     h1 {
+        font-size: 3.3em;;
+    }
+
+    h2 {
         font-size: 3em;
     }
 
     h3 {
-        font-size: 2em;
+        font-size: 1em;
+    }
+
+    h5 {
+        color: darkgrey !important;
+        font-size: 1em;
+        letter-spacing: 0px;
+    }
+
+    .main-section .container {
+        position: relative;
+        height: 100%;
+        width: 100%;
     }
 
     .theme-section {
         margin: 0;
-        padding: 50px 0;
+        padding: 0;
     }
 
     .section-title {
-        font-size: 2em;
+        line-height: normal;
     }
 
     .section-description {
@@ -799,17 +786,38 @@ footer a:hover {
         font-size: 1.2em;
     }
 
-    .main-section .head-title-block.main-section-title {
-        padding: 0 20px;
+    .main-section {
+        background-position: -656px 0px;
     }
 
-    .main-section .head-title-block.main-section-title h1 {
+    .main-section .main-section-title {
+        /*top: 35%;*/
+        padding-left: 0;
+    }
+
+    .main-section .main-section-title h1 {
+        text-align: center;
         margin: 0 0 10px !important;
-        font-size: 2.5em;
     }
 
-    .main-section .head-title-block.main-section-title h3 {
-        margin-bottom: 20px;
-        font-size: 1.2em;
+    .main-section .main-section-title > h3 {
+        font-size: 1em;
+        text-align: center;
+        margin: 0 0 40px;
+    }
+
+    .main-section .main-section-title > h5 {
+        text-align: left;
+        margin-top: 100%;
+        height: 15%;
+        padding-left: 15px;
+    }
+
+    .main-section .main-section-title .social-network {
+        padding-left: 15px;
+    }
+
+    .main-section .main-section-title .line-lg {
+        display: none;
     }
 }
