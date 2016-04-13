@@ -746,13 +746,32 @@ footer a:hover {
     transition: box-shadow 0.2s, background-color 0.2s, transform 0.9s;
 }
 
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 769px) {
+    .main-section {
+        background-position: right;
+    }
+
+    .main-section .main-section-title {
+        top: 40%;
+    }
+    .main-section .main-section-title > h5{
+        color:darkgray;
+    }
+    .main-menu-scroll{
+        /*line-height: normal;*/
+    }
+    .main-menu-scroll .logo{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
     h1 {
-        font-size: 3.3em;;
+        font-size: 3em;;
     }
 
     h2 {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     h3 {
@@ -786,11 +805,11 @@ footer a:hover {
     }
 
     .main-section {
-        background-position: -656px 0px;
+        background-position: -380px 0px;
     }
 
     .main-section .main-section-title {
-        /*top: 35%;*/
+        top: 53%;
         padding-left: 0;
     }
 
@@ -807,16 +826,31 @@ footer a:hover {
 
     .main-section .main-section-title > h5 {
         text-align: left;
-        margin-top: 100%;
+        margin-top: 65%;
         height: 15%;
         padding-left: 15px;
     }
 
     .main-section .main-section-title .social-network {
         padding-left: 15px;
+        margin-top: 20px;
+        line-height: 35px;
+        font-size: 11px;
+        text-align: center;
     }
 
     .main-section .main-section-title .line-lg {
+        display: none;
+    }
+
+    .main-menu {
+        padding: 0;
+        margin: 0;
+    }
+    .main-menu-scroll{
+        line-height: normal;
+    }
+    .main-menu-scroll .logo{
         display: none;
     }
 }
