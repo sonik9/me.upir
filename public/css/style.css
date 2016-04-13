@@ -539,7 +539,7 @@ footer {
     overflow: hidden;
     color: #fff;
     text-align: left;
-    background-color: #000;
+    background-color: #131313;
 }
 
 .container-footer {
@@ -549,7 +549,6 @@ footer {
     overflow: hidden;
     color: #fff;
     text-align: left;
-    background-color: #000;
     display: inline;
     float: left;
 }
