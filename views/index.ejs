@@ -4,7 +4,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <title><%= title %></title>
     <link rel='stylesheet' href='/css/style.css'/>
+
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open%20Sans:300,400,600,700,800">
+    <link rel='stylesheet' href='/js/vendor/timelineCV/css/timelineCV-black.css'/>
 </head>
 <body>
 <!-- preloader -->
@@ -73,7 +75,10 @@
         <h2 class="section-title">Timeline</h2>
         <p class="section-description">My job and education.</p>
         <hr>
-        <p>Under Construction</p><p>Under Construction</p><p>Under Construction</p>
+        <!--<p>Under Construction</p><p>Under Construction</p><p>Under Construction</p>-->
+        <div class="timeline">
+
+        </div>
     </div>
 </section>
 
@@ -236,13 +241,13 @@
                 </div>
             </div>
         </div>
-       <!-- <div class=" block-footer">
-            <h4>MENU</h4>
-            <p class="line-lg"><span></span></p>
-            <a class="services-footer" href="#"></a>
-            <a class="services-footer" href="#">Deal services</a>
-            <a class="services-footer" href="#">Business processes</a>
-        </div>-->
+        <!-- <div class=" block-footer">
+             <h4>MENU</h4>
+             <p class="line-lg"><span></span></p>
+             <a class="services-footer" href="#"></a>
+             <a class="services-footer" href="#">Deal services</a>
+             <a class="services-footer" href="#">Business processes</a>
+         </div>-->
 
         <div class="block-footer map-container">
             <div id="map" class="google-map-block"></div>
@@ -254,6 +259,7 @@
 <script src="js/vendor/jQuery/jquery-1.12.3.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD1OiFyXKfa5SSijRXaRLfe4rfOeOTFag"></script>
 <script src="js/main.js"></script>
+<script src="js/vendor/timelineCV/dist/jquery.timelineCV-0.1.1.js"></script>
 <script>
     $(document).ready(function () {
         $(this).load(function () {
@@ -267,7 +273,6 @@
                 $('.main-section').css('height', $(window).height());
             });
         }
-
 
         $(document).scroll(function () {
             $().onScroll(this, 'active');
@@ -340,10 +345,25 @@
         });
         // footer map end
 
-        $('.main-bg')[0].addEventListener('click', function (event) {
-            $('.main-bg').toggleClass('u-grey');
+        $('.main-section')[0].addEventListener('click', function (event) {
+            $('.main-section').toggleClass('u-grey');
             console.log("qwdqwdwqddwd");
         });
+
+        $.getJSON("http://localhost:3000/files/cv.json", function (data) {
+                    console.log("success");
+                    $('.timeline').timelineCV({ //user configuration
+                        data: data,
+
+                        created: function (e, el) {
+                            //console.log("dwdwd");
+                        }
+                    })
+                })
+                .fail(function () {
+                    console.log("error");
+                });
+
     })
     ;
     //
