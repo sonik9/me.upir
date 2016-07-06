@@ -6,78 +6,183 @@
     <link rel='stylesheet' href='/css/style.css'/>
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open%20Sans:300,400,600,700,800">
-    <link rel='stylesheet' href='/js/vendor/timelineCV/css/timelineCV-black.css'/>
+    <link rel='stylesheet' href='/js/vendor/timelineCV/css/timelineCV-black-0.2.css'/>
 </head>
 <body>
 <!-- preloader -->
 <div id="page-preloader" class="page-preloader">
-    <div class="preloader">
-
+        <div class="cssload-thecube">
+            <div class="cssload-cube cssload-c1"></div>
+            <div class="cssload-cube cssload-c2"></div>
+            <div class="cssload-cube cssload-c4"></div>
+            <div class="cssload-cube cssload-c3"></div>
     </div>
 </div>
 
 <header class="u-header">
-    <nav class="navbar">
-        <div class="main-menu">
+    <div class="btn-navbar-mobile">
+        <i class="fa fa-bars"> </i>
+        <i class="fa fa-angle-double-up hide-btn"> </i>
+        <a id="languageBtn" class="btn1 language-btn">EN/PL</a>
+    </div>
+    <nav class="navbar navbar-transparent hide">
+        <div class="main-menu hide">
             <ul class="main-menu-nav">
-                <li><a class="no-event logo" href="https://upir.me">Vitalii.Upir</a></li>
                 <li><a href="#main-section">Home</a></li>
+                <li class="navbar-mobile-about"><a href="#about-section">About me</a></li>
+                <li><a href="#cv-section">CV</a></li>
                 <li><a href="#timeline-section">timeline</a></li>
-                <li><a href="/files/CV_DEV1_PL.pdf">CV</a></li>
                 <li><a href="#projects-section">Projects</a></li>
                 <li><a href="#skills-section">Skill mix</a></li>
-                <li><a class="no-event" href="http://upir.me/blog">Blog</a></li>
+                <li><a href="#blog" class="no-event" href="http://upir.me/blog">Blog</a></li>
                 <li><a href="#contacts-section">Contacts</a></li>
-                <li><a href="">Language</a></li>
             </ul>
+            <a class="btn1 language-btn">EN/PL</a>
         </div>
     </nav>
+
 </header>
 <!-- main section -->
 <section id="main-section" class="main-section">
-    <!--<div id="main-bg" class="main-bg scale" style="background-image: url('./images/me4.jpg');"></div>-->
-    <div class="container">
-        <div class="head-title-block main-section-title">
-            <h1 class="theme-animation fadeInDown animation-delay-1 animation-delay-0 animateIt">
-                <a class="no-event logo" href="https://upir.me">Vitalii.Upir</a>
-            </h1>
-            <h3 class="theme-animation fadeInDown animation-delay-2 animation-delay-1 animateIt">
-                World wide web things building
-            </h3>
-            <p class="line-lg"><span></span></p>
-            <h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur cum debitis
-                    deleniti dicta dolor dolorum est exercitationem facere ipsam obcaecati odit omnis pariatur
-                    perferendis quas, reiciendis repellendus sed vitae.
-                    Привет!
-                </p>
-            </h5>
-            <ul class="social-network">
+    <div class="main-bg image-file1">
+        <div class="container">
+            <div class="main-section-title">
+
+            </div>
+            <ul class=" social-network">
                 <li><a href="https://www.linkedin.com/in/vitaliy-upir-20020313?trk=hp-identity-name"
                        target="_blank"><span class="fa fa-linkedin"></span></a></li>
-                <li><a href="https://www.facebook.com/upirvo" target="_blank"><span class="fa fa-facebook"></span></a>
+                <li><a href="https://www.facebook.com/upirvo" target="_blank"><span
+                                class="fa fa-facebook"></span></a>
                 </li>
-                <li><a href="https://github.com/sonik9" target="_blank"><span class="fa fa-github"></span></a></li>
+                <li><a href="https://github.com/sonik9" target="_blank"><span class="fa fa-github"></span></a>
+                </li>
                 <li style="color: #ffffff">
-                    <a class="btn theme-animation fadeInDown animation-delay-3 animation-delay-2 animateIt"
-                       href="#contacts-section">
-                        Contact . me
-                    </a>
+                    <a id="btn" class="btn"
+                       href="#contacts-section">Contact . me</a>
                 </li>
             </ul>
-
+            <div class="btn-goto-about">
+                <i class="fa fa-angle-double-down"></i>
+            </div>
+        </div>
+    </div>
+    <div id="about-section" class="main-about">
+        <div class="container">
+            <!-- <h2 class="section-title">About me</h2>
+             <p class="section-description">Brief description of my experience.</p>-->
+            <h2 class="section-title theme-animation fadeInUp  animation-delay-0 animateIt">
+                <!--<a class="logo no-event" href="https://upir.me">VITALII.UPIR</a>-->
+                VITALII.<span>UPIR</span>
+            </h2>
+            <!--<h3 class="theme-animation fadeInDown  animation-delay-1 animateIt">
+                World wide web things building
+            </h3>-->
+            <p class="section-description">Java && JavaScript Developer, Freelancer, and WEB-Door Co. Owner in Warsaw,
+                Poland</p>
+            <hr/>
+            <div class="about-block">
+                <article>
+                    <h5>
+                        <p>Hi everyone! ;)</p>
+                        <p>My name is Vitalii!
+                            I am a Software developer with more than 1 year of JAVA/JavaScript experience and more than
+                            10 years of IT experience.
+                            I have enjoyed programming as a hobby since my student’s years.
+                            I started professional programming in 2014 and have constantly explored new technologies in
+                            software development.
+                            Being focused on web development of business solutions (back-end/front-end),
+                            I have developed all main <a href="#skills-section">IT-skills</a>,
+                            required for development of qualitative software.
+                            I have also got several realized <a href="#projects-section">projects</a>(blog, web-site1,
+                            web-site2) as well as libraries and
+                            modules.
+                        <p>Based on my four-year experience of project management in IT, I possess the following
+                            qualities:</p>
+                        <ul>
+                            <li>Efficient team management on all the stages of project organization and achievement of
+                                objectives;
+                            </li>
+                            <li>Excellent problem-solver, able to quickly grasp complex and critical issues;</li>
+                            <li>Multitasking and prioritizing;</li>
+                            <li>Ability to work under pressure and meeting deadlines.</li>
+                        </ul>
+                        </p>
+                    </h5>
+                </article>
+            </div>
         </div>
     </div>
 </section>
+
+<!-- CV section -->
+<section id="cv-section" class="cv-section theme-section">
+    <div class="container">
+        <h2 class="section-title">Curriculum vitae</h2>
+        <p class="section-description">Full description of my experience.</p>
+        <hr>
+        <div class="cv-block">
+            <div class="cv-container eff-2-2">
+                <h4>English</h4>
+                <div class="cv-image">
+                </div>
+                <div class="desc cv-desc">
+                    <a href="files/CV_DEV1_EN.pdf" class="btn" title="Download.it" target="_blank">Download.it</a>
+                </div>
+                <!--<div class="cv-label">EN</div>-->
+            </div>
+            <div class="cv-container eff-2-2">
+                <h4>Polish</h4>
+                <div class="cv-image">
+                </div>
+                <div class="desc cv-desc">
+                    <a class="btn" href="files/CV_DEV1_PL.pdf" title="Download.it" target="_blank">Download.it</a>
+                </div>
+                <!--<div class="cv-label">PL</div>-->
+            </div>
+            <div class="cv-container eff-2-2">
+                <h4>Russian</h4>
+                <div class="cv-image">
+                </div>
+                <div class="desc cv-desc">
+                    <a class="btn" title="Download.it">Download.it</a>
+                </div>
+                <!--<div class="cv-label">RU</div>-->
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- timeline section -->
 <section id="timeline-section" class="theme-section timeline-section">
-    <div class="container">
-        <h2 class="section-title">Timeline</h2>
-        <p class="section-description">My job and education.</p>
-        <hr>
-        <!--<p>Under Construction</p><p>Under Construction</p><p>Under Construction</p>-->
-        <div class="timeline">
+    <div class="bg-timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Timeline</h2>
+                <p class="section-description">My job and education.</p>
+                <hr>
+            </div>
+            <!--<p>Under Construction</p><p>Under Construction</p><p>Under Construction</p>-->
+            <div class="timeline">
 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="timeline-detail-section theme-section">
+    <div class="timeline-detail-block"></div>
+</section>
+
+<!--Skill section-->
+<section id="skills-section" class="theme-section skill-section">
+    <div class="bg-skill-section">
+        <div class="container">
+            <h2 class="section-title"> Skill Mix</h2>
+            <p class="section-description">My practical experience.</p>
+            <hr>
+            <div class="skills-block">
+
+            </div>
         </div>
     </div>
 </section>
@@ -87,133 +192,93 @@
     <div class="container">
         <h2 class="section-title">Projects</h2>
         <p class="section-description">My training and practice.</p>
-        <!--<div class="news-list version-2">
-            <div class="col-xs-12 col-sm-8 nopadding">
-                <div class="news-item left">
-                    <div class="news-img-block">
-                        <canvas width="1" height="1" class="square-img"
-                                style="background-image:url('./images/news-1.jpg');"></canvas>
-                    </div>
-                    <div class="news-text-block">
-                        <canvas width="1" height="1" class="square-img"></canvas>
-                        <div class="inner-wrap">
-                            <h5>Knowing Your Rights As</h5>
-                            <p class="news-date">09 June 2015</p>
-                            <p class="line-lg"><span></span></p>
-                            <p class="news-text-block-text">We delve into common stock owners' privileges and how to be
-                                vigilant in monitoring a company. Learn how to break down and understand a corporate
-                                budget.
-                            </p>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary" href="./blog_post.html">Read more</a>
-                </div>
-                <div class="news-item right">
-                    <div class="news-img-block">
-                        <canvas width="1" height="1" class="square-img"
-                                style="background-image:url('./images/news-2.jpg');"></canvas>
-                    </div>
-                    <div class="news-text-block">
-                        <canvas width="1" height="1" class="square-img"></canvas>
-                        <div class="inner-wrap">
-                            <h5>The Benefits Of Corporate</h5>
-                            <p class="news-date">10 June 2015</p>
-                            <p class="line-lg"><span></span></p>
-                            <p class="news-text-block-text">Many U.S. companies have found it advantageous to relocate
-                                their headquarters rather than face the highest corporate tax rates in the world
-                                regardless...</p>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary" href="./blog_post.html">Read more</a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 nopadding">
-                <div class="news-item top">
-                    <div class="news-img-block">
-                        <canvas width="1" height="1" class="square-img"
-                                style="background-image:url('./images/news-3.jpg');"></canvas>
-                    </div>
-                    <div class="news-text-block">
-                        <canvas width="1" height="1" class="square-img"></canvas>
-                        <div class="inner-wrap">
-                            <h5>4 Ways Millennials Can Buy</h5>
-                            <p class="news-date">11 June 2015</p>
-                            <p class="line-lg"><span></span></p>
-                            <p class="news-text-block-text">Buying private businesses is a good way to have greater
-                                control over your investments while increasing your income and avoiding the fluctuations
-                                of the market.</p>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary" href="./blog_post.html">Read more</a>
-                </div>
-            </div>
-        </div>-->
         <hr>
-        <p>Under Construction</p>
-        <p>Under Construction</p>
-        <p>Under Construction</p>
+        <div class="project-block">
+            <div class="project-container eff-2-2">
+                <h4>Project 1</h4>
+                <div class="project-image">
+                </div>
+                <div class="desc project-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <a class="btn" title="Read.more" target="_blank">Read.more</a>
+                </div>
+                <!--<div class="cv-label">EN</div>-->
+            </div>
+            <div class="project-container eff-2-2">
+                <h4>Project 2</h4>
+                <div class="project-image">
+                </div>
+                <div class="desc project-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <a class="btn" title="Read.more" target="_blank">Read.more</a>
+                </div>
+                <!--<div class="cv-label">PL</div>-->
+            </div>
+            <div class="project-container eff-2-2">
+                <h4>Project 3</h4>
+                <div class="project-image">
+                </div>
+                <div class="desc project-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <a class="btn" title="Read.more">Read.more</a>
+                </div>
+                <!--<div class="cv-label">RU</div>-->
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="skills-section" class="theme-section skill-section">
-    <div class="container">
-        <h2 class="section-title"> Skill Mix</h2>
-        <p class="section-description">My practical experience.</p>
-        <hr>
-        <p>Under Construction</p>
-        <p>Under Construction</p>
-        <p>Under Construction</p>
-    </div>
-</section>
 
 <!-- Contacts section -->
-<section id="contacts-section" class="theme-section contact-section row">
-    <div class="col contact-section-form">
-        <h4 class="section-title">Contact to.me</h4>
-        <form id="callback-form" class="" autocomplete="on">
-
-            <div class="row">
-                <div class="col">
-                    <div class="input-group">
+<section id="contacts-section" class="theme-section contact-section">
+    <div class="bg-contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact to.me</h2>
+            <p class="section-description">Send me message.</p>
+            <hr/>
+            <div class="contact-block">
+                <form id="callback-form" class="" autocomplete="on">
+                    <div class="input-group is-empty name">
                         <div class="input-group-addon"><span class="fa fa-user"></span></div>
-                        <input type="text" name="u_name" placeholder="Name" class="form-control requiredField name"
-                               value="">
+                        <label class="input-label">Your name</label>
+                        <input type="text" class="form-control" value=""/>
+                        <span class="material-input"></span>
                     </div>
-                    <div class="input-group">
+                    <!--<div class="input-group is-empty">
                         <div class="input-group-addon"><span class="fa fa-phone"></span></div>
                         <input type="text" name="u_phone" placeholder="Phone"
                                class="form-control requiredField phone" value="">
-                    </div>
-                    <div class="input-group">
+                    </div>-->
+                    <div class="input-group is-empty email">
                         <div class="input-group-addon"><span class="fa fa-at"></span></div>
-                        <input type="text" name="u_mail" placeholder="Enter email"
-                               class="form-control requiredField email" value="">
+                        <label class="input-label">Your email</label>
+                        <input type="text" name="u_mail" class="form-control" value="">
+                        <span class="material-input"></span>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="input-group">
+                    <div class="input-group is-empty message">
                         <div class="input-group-addon"><span class="fa fa-pencil"></span></div>
-                            <textarea class="form-control message" name="u_text" placeholder="Message"
-                                      rows="6"></textarea>
-                        <input class="btn" type="submit" value="Send">
+                        <label class="input-label static-label">Your message</label>
+                        <textarea class="form-control message" name="u_text" rows="5"></textarea>
+                        <span class="material-input"></span>
                     </div>
-                </div>
+                    <a class="btn" id="sendMessage">Send</a>
+                </form>
             </div>
-        </form>
-    </div>
-    <div class="col subscribe-section-form">
-        <h4 class="section-title">Subscribe to.me</h4>
-        <form id="subscribe-form" class="input-group" autocomplete="on">
-            <i class="subscribe-icon fa fa-envelope-o"></i>
-            <div class="input-group">
-                <div class="input-group-addon">
-                    <span class="fa fa-at"></span>
-                </div>
-                <input type="text" name="u_mail" placeholder="Enter email"
-                       class="form-control requiredField email" value="">
-            </div>
-            <input class="btn" type="submit" value="sing up">
-        </form>
+        </div>
+        <!--<div class="col subscribe-section-form">-->
+        <!--<h4 class="section-title">Subscribe to.me</h4>-->
+        <!--<form id="subscribe-form" class="input-group" autocomplete="on">-->
+        <!--<i class="subscribe-icon fa fa-envelope-o"></i>-->
+        <!--<div class="input-group">-->
+        <!--<div class="input-group-addon">-->
+        <!--<span class="fa fa-at"></span>-->
+        <!--</div>-->
+        <!--<input type="text" name="u_mail" placeholder="Enter email"-->
+        <!--class="form-control requiredField email" value="">-->
+        <!--</div>-->
+        <!--<input class="btn" type="submit" value="sing up">-->
+        <!--</form>-->
+        <!--</div>-->
     </div>
 </section>
 <footer>
@@ -241,15 +306,22 @@
                 </div>
             </div>
         </div>
-        <!-- <div class=" block-footer">
-             <h4>MENU</h4>
+         <div class="block-footer footer-menu">
+             <h4>Sections</h4>
              <p class="line-lg"><span></span></p>
-             <a class="services-footer" href="#"></a>
-             <a class="services-footer" href="#">Deal services</a>
-             <a class="services-footer" href="#">Business processes</a>
-         </div>-->
+             <ul class="sections">
+                 <li><a href="#main-section">Home</a></li>
+                 <li class="navbar-mobile-about"><a href="#about-section">About me</a></li>
+                 <li><a href="#cv-section">CV</a></li>
+                 <li><a href="#timeline-section">timeline</a></li>
+                 <li><a href="#projects-section">Projects</a></li>
+                 <li><a href="#skills-section">Skill mix</a></li>
+                 <li><a href="#blog" class="no-event" href="http://upir.me/blog">Blog</a></li>
+                 <li><a href="#contacts-section">Contacts</a></li>
+             </ul>
+         </div>
 
-        <div class="block-footer map-container">
+        <div class="map-container">
             <div id="map" class="google-map-block"></div>
         </div>
 
@@ -259,7 +331,7 @@
 <script src="js/vendor/jQuery/jquery-1.12.3.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD1OiFyXKfa5SSijRXaRLfe4rfOeOTFag"></script>
 <script src="js/main.js"></script>
-<script src="js/vendor/timelineCV/dist/jquery.timelineCV-0.1.1.js"></script>
+<script src="js/vendor/timelineCV/dist/jquery.timelineCV-0.2.1.js"></script>
 <script>
     $(document).ready(function () {
         $(this).load(function () {
@@ -268,48 +340,19 @@
         });
 
         if (!$('.main-section').hasClass("no-index")) {
-            $('.main-section').css('height', $(window).height());
+            $('.main-section .main-bg').css('height', $(window).height());
+            $('#about-section').css('height', $(window).height() - $(window).height() * 0.13);
             $(window).resize(function () {
-                $('.main-section').css('height', $(window).height());
+                $('.main-section .main-bg').css('height', $(window).height());
+                $('#about-section').css('height', $(window).height() - $(window).height() * 0.13);
+                /*if ($('.timeline-cv').height() < $(window).height()) {
+                 $('.bg-timeline-section').css('height', $(window).height());
+                 }else {
+                 $('.timeline-cv').css('height', '100%');
+                 $('.bg-timeline-section').css('height', '100%');
+                 }*/
             });
         }
-
-        $(document).scroll(function () {
-            $().onScroll(this, 'active');
-            console.log("sd");
-        });
-        //smoothscroll
-        $('a[href^="#"]').on('click', function (e) {
-            e.preventDefault();
-            //$(document).off("scroll");
-
-            $('a').each(function () {
-                $(this).removeClass('active');
-            });
-            $(this).addClass('active');
-
-            var target = this.hash,
-                    menu = target;
-            $target = $(target);
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top + 2
-            }, 500, 'swing', function () {
-                window.location.hash = target;
-                $(document).on("scroll", $().onScroll(this, 'active'));
-            });
-        });
-        /*Main-Menu change*/
-        $(window).scroll(function () {
-
-            if ($(this).scrollTop() > 150) {
-//                $('.main-section h1').animate({fontSize: "0"}, 0, function () {});
-                $('.main-menu').addClass('main-menu-scroll');
-            }
-            else {
-//                $('.main-section h1').animate({fontSize: "3.75em"}, 0, function () {});
-                $('.main-menu').removeClass('main-menu-scroll');
-            }
-        })
 
         // footer map
         // init google map
@@ -345,25 +388,45 @@
         });
         // footer map end
 
-        $('.main-section')[0].addEventListener('click', function (event) {
+        $('.main-bg .container').click(function (e) {
+            if (e.target != this) return false;
+
             $('.main-section').toggleClass('u-grey');
-            console.log("qwdqwdwqddwd");
+        });
+        /* $.ajaxSetup({
+         async: false
+         });*/
+        $.getJSON("/files/resume.json", function (data) {
+            console.log("success");
+            $('.timeline').timelineCV({ //user configuration
+                containerDetail: '.timeline-detail-block',
+                containerSkills: '.skills-block',
+                data: data,
+                typeOfTimeline: "default",
+                typeOfView: "horizontal",
+                created: function (e, el) {
+                    var rippleButton = new RippleButton();
+                    rippleButton.init();
+                }
+            })
+        }).fail(function () {
+            console.log("error");
+        }).always(function () {
+            if ($('.timeline').height() < $(window).height()) {
+                $('.timeline').css('height', $(window).height() - 100);
+            }
+
         });
 
-        $.getJSON("/files/cv.json", function (data) {
-                    console.log("success");
-                    $('.timeline').timelineCV({ //user configuration
-                        data: data,
-
-                        created: function (e, el) {
-                            //console.log("dwdwd");
-                        }
-                    })
-                })
-                .fail(function () {
-                    console.log("error");
-                });
-
+        $(window).on('load', function () {
+            var $preloader = $('.page-preloader');
+                    //$spinner   = $preloader.find('.spinner');
+            //$spinner.fadeOut();
+            $preloader.delay(550).fadeOut('slow');
+            $preloader.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function (e) {
+                $(this).remove();
+            });
+        });
     })
     ;
     //
