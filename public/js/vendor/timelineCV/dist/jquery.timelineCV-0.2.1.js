@@ -379,8 +379,9 @@
                 $('html, body').stop().animate({
                     'scrollTop': $('.detail-block').offset().top - 50
                 }, 500, 'swing', function () {
-                    window.location.hash = target;
+                    // window.location.hash = target;
                     // $(document).on("scroll", $().onScroll(this, 'active'));
+                    $(document).on("scroll", $().onScroll(this, 'active'));
                 });
                 $(target).addClass('select-detail-item');
 
