@@ -167,7 +167,7 @@ a:hover {
 }
 
 .input-group .input-label {
-    padding-left: 20px;
+    padding-left: 7%;
     position: absolute;
     pointer-events: none;
     transition: 0.5s ease all;
@@ -200,9 +200,10 @@ a:hover {
     background-position: center bottom, center calc(100% - 1px);
     background-color: transparent;
     transition: background 0s ease-out;
-    /*font-weight: 400;*/
+    font-weight: 100;
     color: #ffffff;
     width: 100%;
+    font: 1.5em 'Open Sans';
 }
 
 .input-group.is-focused .form-control {
@@ -793,12 +794,13 @@ a:hover {
 }
 
 .contact-section .input-group textarea {
-    height: calc((43px * 3 + 15px * 2) - 44px);
+    /*height: calc((43px * 3 + 15px * 2) - 44px);*/
     color: #ffffff;
     display: block;
-    padding-top: 13px;
-    line-height: 1.4em;
+    /*padding-top: 13px;*/
+    /*line-height: 1.4em;*/
     letter-spacing: 1.3px;
+
 }
 
 /*Footer*/

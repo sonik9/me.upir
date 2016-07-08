@@ -410,8 +410,18 @@
                     rippleButton.init();
                 }
             })
+            $(window).on('load', function () {
+                var $preloader = $('.page-preloader');
+                //$spinner   = $preloader.find('.spinner');
+                //$spinner.fadeOut();
+                $preloader.delay(550).fadeOut('slow');
+                $preloader.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function (e) {
+                    $(this).remove();
+                });
+            });
         }).fail(function () {
             console.log("error");
+
         }).always(function () {
             if ($('.timeline').height() < $(window).height()) {
                 $('.timeline').css('height', $(window).height() - 100);
@@ -419,15 +429,7 @@
 
         });
 
-        $(window).on('load', function () {
-            var $preloader = $('.page-preloader');
-            //$spinner   = $preloader.find('.spinner');
-            //$spinner.fadeOut();
-            $preloader.delay(550).fadeOut('slow');
-            $preloader.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function (e) {
-                $(this).remove();
-            });
-        });
+
     })
     ;
     //
