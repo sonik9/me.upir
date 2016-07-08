@@ -353,7 +353,7 @@ a:hover {
 
 .main-section .container {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: flex-end;
     align-items: center;
     /*height: 100%;*/
@@ -365,10 +365,12 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     /*background-position: left;*/
-    /*background-position: 35.3992% 25.1905%;*/
+    background-position: 35.3992% 25.1905%;
     /*opacity: 0.9;*/
-    height: 100%;
+    height: 800px;
     /*flex-basis: 100%;*/
+    /*width: 864.016px;*/
+
 }
 
 .main-bg.image-file1 {
@@ -903,7 +905,7 @@ footer .sections {
     background-color: rgba(76, 76, 76, 1);;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px){
 
     .section-title {
         font-size: 2.3em;
