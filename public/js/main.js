@@ -1,49 +1,31 @@
 /**
  * Created by Vitalii on 11/04/2016.
  */
-/*$.fn.scrollTo = function( target, options, callback ){
-    if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
-    var settings = $.extend({
-        scrollTarget  : target,
-        offsetTop     : 50,
-        duration      : 500,
-        easing        : 'swing'
-    }, options);
-    return this.each(function(){
-        var scrollPane = $(this);
-        var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
-        var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
-        scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
-            if (typeof callback == 'function') { callback.call(this); }
-        });
-    });
-};*/
-$.fn.onScroll = function onScroll(event,cssClass){
+
+$.fn.onScroll = function onScroll(event, cssClass) {
     var scrollPos = $(document).scrollTop();
     $('.main-menu-nav a:not(.no-event)').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top-100 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        if (refElement.position().top - 100 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             $('.main-menu ul li a:not(.no-event)').removeClass(cssClass);
             //debugger;
             currLink.addClass(cssClass);
         }
-        else{
+        else {
             currLink.removeClass(cssClass);
         }
     });
 };
 
-$(document).scroll(function () {
-    $().onScroll(this, 'active');
-});
+/*$(document).scroll(function () {
+ $().onScroll(this, 'active');
+ });*/
 
 //smoothscroll
-$('.main-menu a[href^="#"]').on('click', function (e) {
+$('a[href^="#"]').on('click', function (e) {
     e.preventDefault();
-//            $(document).off("scroll");
-
-    $('.main-menu a[href^="#"]').each(function () {
+    $('a[href^="#"]').each(function () {
         $(this).removeClass('active');
     });
     $(this).addClass('active');
@@ -58,27 +40,22 @@ $('.main-menu a[href^="#"]').on('click', function (e) {
         $(document).on("scroll", $().onScroll(this, 'active'));
     });
 });
+
 /*Main-Menu change*/
 $(window).scroll(function () {
 
-    if ($(this).scrollTop() > $(window).height()-100) {
-//                $('.main-section h1').animate({fontSize: "0"}, 0, function () {});
+    if ($(this).scrollTop() > $(window).height() - 100) {
         $('.navbar').removeClass('navbar-transparent').addClass('main-menu-scroll');
 
     }
     else {
-//                $('.main-section h1').animate({fontSize: "3.75em"}, 0, function () {});
         $('.navbar').addClass('navbar-transparent').removeClass('main-menu-scroll');
     }
 });
 
-
-$('.btn-main-photo-slide').bind('click',function (event) {
-    // event.stopPropagation();
-    $('.main-photo').toggleClass('image-file2');
-});
+/*Mobile menu*/
 $('.btn-navbar-mobile').click(function (e) {
-    if(e.target.id === 'languageBtn') return false;
+    if (e.target.id === 'languageBtn') return false;
 
     $('.navbar').toggleClass('hide');
     $('.btn-navbar-mobile i').each(function (i, item) {
@@ -103,64 +80,137 @@ RippleButton.prototype.createRipple = function () {
         rippleElement.classList.add('c-ripple');
         rippleCircle.classList.add('c-ripple__circle');
         rippleElement.appendChild(rippleCircle);
-        rippleElement.addEventListener('click',function (e) {
-            var offsetTop =rippleElement.parentElement.offsetTop;//getBoundingClientRect().top;//
-            var offsetLeft =rippleElement.parentElement.offsetLeft;
-            var circle =rippleElement.firstElementChild;
+        rippleElement.addEventListener('click', function (e) {
+            var offsetTop = rippleElement.parentElement.offsetTop;//getBoundingClientRect().top;//
+            var offsetLeft = rippleElement.parentElement.offsetLeft;
+            var circle = rippleElement.firstElementChild;
             var x = e.pageX - offsetLeft;
             var y = e.pageY - offsetTop;
-            circle.style.top =y+'px';
-            circle.style.left =x+'px';
+            circle.style.top = y + 'px';
+            circle.style.left = x + 'px';
             circle.classList.add('is-active');
         });
-        rippleElement.addEventListener('animationend',function () {
+        rippleElement.addEventListener('animationend', function () {
             rippleElement.firstElementChild.classList.remove('is-active');
         });
         return rippleElement;
     }
-    Array.prototype.forEach.call(this.container,function (item) {
+
+    Array.prototype.forEach.call(this.container, function (item) {
         item.appendChild(create());
     });
 
 };
 
-
-    /*$('.btn').each(function (i, index) {
-        var re = $('<div/>').addClass('js-ripple').addClass('c-ripple');
-        var rc = $('<div/>').addClass('c-ripple__circle');
-        re.append(rc);
-        $(index).append(re);
-    });
-    var $ripple = $('.js-ripple');
-    $ripple.on('click.ui.ripple',function (e) {
-        var $this = $(this);
-        var $offset = $this.parent().offset();
-        var $circle = $this.find('.c-ripple__circle');
-
-        var x = e.pageX - $offset.left;
-        var y = e.pageY - $offset.top;
-
-        $circle.css({
-            top: y + 'px',
-            left: x + 'px'
-        }).addClass('is-active');
-        // $this.addClass('rippleEffect');
-
-    });
-
-    $ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function (e) {
-        $(this).find('.c-ripple__circle').removeClass('is-active');
-}*/
-
-$('.input-group').on('click',function (e) {
+/*Input controls animate*/
+$('.input-group').on('click', function (e) {
     $(this).addClass('is-focused');
-}).find('.form-control').on('blur',function (e) {
-    var a= $('.is-focused').find('.form-control');
-    if($(a)[0]!=undefined && $(a)[0].value.length>0){
+}).find('.form-control').on('blur', function (e) {
+    var a = $('.is-focused').find('.form-control');
+    if ($(a)[0] != undefined && $(a)[0].value.length > 0) {
         $('.is-focused').removeClass('is-empty');
     }
-    else{
-        $('.is-focused').hasClass('is-empty')?true:$('.is-focused').addClass('is-empty');
+    else {
+        $('.is-focused').hasClass('is-empty') ? true : $('.is-focused').addClass('is-empty');
     }
     $('.is-focused').removeClass('is-focused');
+});
+
+/*Google map*/
+// footer map
+// init google map
+function initialize() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        scrollwheel: false,
+        center: {lat: 52.231987, lng: 21.014571}
+    });
+    // marker
+    var marker = new google.maps.Marker({
+        map: map,
+        position: {lat: 52.231987, lng: 21.014571},
+        title: 'Warsaw'
+    });
+
+}
+;
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// footer map open
+/*$(document).on("click", ".open-map", function () {
+ $(this).addClass("_open-map");
+ return false;
+ });
+ $(document).on("click", "#map", function () {
+ return false;
+ });
+ $(document).on("click", "body", function () {
+ $('.open-map').removeClass("_open-map");
+ });*/
+// footer map end
+
+/*Photo grey background*/
+$('.main-bg .container').click(function (e) {
+    if (e.target != this) return false;
+
+    $('.main-section').toggleClass('u-grey');
+});
+
+$.getJSON("/files/resume.json", function (data) {
+    console.log("success");
+    $('.timeline').timelineCV({
+        //user configuration
+        containerDetail: '.timeline-detail-block',
+        containerSkills: '.skills-block',
+        data: data,
+        typeOfTimeline: "default",
+        typeOfView: "horizontal",
+        created: function (e, el) {
+            /*var rippleButton = new RippleButton();
+             rippleButton.init();*/
+        }
+    })
+
+}).fail(function () {
+    alert("I'm sorry something went bad way! \nPlease restart page! ");
+
+}).always(function () {
+    if ($('.timeline').height() < $(window).height()) {
+        $('.timeline').css('height', $(window).height() - 100);
+    }
+
+});
+
+var MyMailer = function MyMailer(data, url) {
+    this.data = data;
+    this.url = url;
+
+};
+/*MyMailer.prototype.createMail = function () {
+    return {
+        data: this.data,
+        url: this.url
+    }
+};*/
+MyMailer.prototype.sendMail = function () {
+    
+    $.ajax({
+        type: "POST",
+        url: this.url,
+        data: this.data,
+        success: function (msg) {
+            console.log("Прибыли данные: " + msg);
+        }
+    });
+};
+
+MyMailer.prototype.init = function () {
+    this.sendMail();
+};
+
+
+$('#sendMessage').on('click',function () {
+    var form = this.closest('form');
+    var mail = new MyMailer($(form).serialize(),$(form).attr('action'));
+    mail.init();
 });
