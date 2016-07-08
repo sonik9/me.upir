@@ -326,13 +326,13 @@
 <script src="js/vendor/jQuery/jquery-1.12.3.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD1OiFyXKfa5SSijRXaRLfe4rfOeOTFag"></script>
 <script src="js/main.js"></script>
-<!--<script src="js/vendor/timelineCV/dist/jquery.timelineCV-0.2.1.js"></script>-->
+<script src="js/vendor/timelineCV/dist/jquery.timelineCV-0.2.1.js"></script>
 <script>
     $(document).ready(function () {
-        $(this).load(function () {
+        /*$(this).load(function () {
             var preloader = $('#page-preloader');
             preloader.removeClass('pageload-loading');
-        });
+        });*/
 
         if (!$('.main-section').hasClass("no-index")) {
             var h = $(window).height();
@@ -410,13 +410,7 @@
                     rippleButton.init();
                 }
             })
-            $(window).on('load', function () {
-                var $preloader = $('.page-preloader');
-                $preloader.delay(550).fadeOut('slow');
-                $preloader.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function (e) {
-                    $(this).remove();
-                });
-            });
+
         }).fail(function () {
             console.log("error");
 
@@ -427,7 +421,13 @@
 
         });
 
-
+        $(window).on('load', function () {
+            var $preloader = $('.page-preloader');
+            $preloader.delay(550).fadeOut('slow');
+            $preloader.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function (e) {
+                $(this).remove();
+            });
+        });
     })
     ;
     //
