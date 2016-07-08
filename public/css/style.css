@@ -442,7 +442,9 @@ a:hover {
 
 .main-section .main-about {
     flex: 1 1 400px;
-    margin-left: -130px;
+    /*margin-left: -130px;*/
+    margin-left: -15%;
+    padding-top: 5%;
     padding-right: 50px;
 }
 
