@@ -551,7 +551,7 @@ a:hover {
     flex-flow: row wrap;
     justify-content: space-around;
     width: 100%;
-    margin: 5% 5% 0 5%;
+    margin: 100px 100px 0 100px;
 
 }
 
@@ -634,7 +634,7 @@ a:hover {
     flex-flow: row wrap;
     justify-content: space-around;
     width: 100%;
-    margin: 5% 5% 0 5%;
+    margin: 100px 100px 0 100px;
 
 }
 
@@ -683,7 +683,9 @@ a:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
 }
-
+.skill-section .container .skills-block {
+    margin: 100px 100px 0 100px;
+}
 .skill-section .container .skills-block .skills-container {
     display: flex;
     flex-flow: row wrap;
