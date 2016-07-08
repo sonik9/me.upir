@@ -11,12 +11,12 @@
 <body>
 <!-- preloader -->
 <div id="page-preloader" class="page-preloader">
-<!--        <div class="cssload-thecube">
-            <div class="cssload-cube cssload-c1"></div>
-            <div class="cssload-cube cssload-c2"></div>
-            <div class="cssload-cube cssload-c4"></div>
-            <div class="cssload-cube cssload-c3"></div>
-    </div>-->
+    <!--        <div class="cssload-thecube">
+                <div class="cssload-cube cssload-c1"></div>
+                <div class="cssload-cube cssload-c2"></div>
+                <div class="cssload-cube cssload-c4"></div>
+                <div class="cssload-cube cssload-c3"></div>
+        </div>-->
 </div>
 
 <header class="u-header">
@@ -69,18 +69,13 @@
     </div>
     <div id="about-section" class="main-about">
         <div class="container">
-            <!-- <h2 class="section-title">About me</h2>
-             <p class="section-description">Brief description of my experience.</p>-->
-            <h2 class="section-title theme-animation fadeInUp  animation-delay-0 animateIt">
-                <!--<a class="logo no-event" href="https://upir.me">VITALII.UPIR</a>-->
-                VITALII.<span>UPIR</span>
-            </h2>
-            <!--<h3 class="theme-animation fadeInDown  animation-delay-1 animateIt">
-                World wide web things building
-            </h3>-->
-            <p class="section-description">Java && JavaScript Developer, Freelancer in Warsaw,
-                Poland</p>
-            <hr/>
+            <div class="header-block">
+                <h2 class="section-title theme-animation fadeInUp  animation-delay-0 animateIt">
+                    VITALII.<span>UPIR</span>
+                </h2>
+                <p class="section-description">Java && JavaScript Developer, Freelancer in Warsaw, Poland</p>
+                <hr/>
+            </div>
             <div class="about-block">
                 <article>
                     <h5>
@@ -306,20 +301,20 @@
                 </div>
             </div>
         </div>
-         <div class="block-footer footer-menu">
-             <h4>Sections</h4>
-             <p class="line-lg"><span></span></p>
-             <ul class="sections">
-                 <li><a href="#main-section">Home</a></li>
-                 <li class="navbar-mobile-about"><a href="#about-section">About me</a></li>
-                 <li><a href="#cv-section">CV</a></li>
-                 <li><a href="#timeline-section">timeline</a></li>
-                 <li><a href="#projects-section">Projects</a></li>
-                 <li><a href="#skills-section">Skill mix</a></li>
-                 <li><a href="#blog" class="no-event" href="http://upir.me/blog">Blog</a></li>
-                 <li><a href="#contacts-section">Contacts</a></li>
-             </ul>
-         </div>
+        <div class="block-footer footer-menu">
+            <h4>Sections</h4>
+            <p class="line-lg"><span></span></p>
+            <ul class="sections">
+                <li><a href="#main-section">Home</a></li>
+                <li class="navbar-mobile-about"><a href="#about-section">About me</a></li>
+                <li><a href="#cv-section">CV</a></li>
+                <li><a href="#timeline-section">timeline</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#skills-section">Skill mix</a></li>
+                <li><a href="#blog" class="no-event" href="http://upir.me/blog">Blog</a></li>
+                <li><a href="#contacts-section">Contacts</a></li>
+            </ul>
+        </div>
 
         <div class="map-container">
             <div id="map" class="google-map-block"></div>
@@ -340,11 +335,17 @@
         });
 
         if (!$('.main-section').hasClass("no-index")) {
-            $('.main-section .main-bg').css('height', $(window).height());
-          //  $('#about-section').css('height', $(window).height() - $(window).height() * 0.13);
+            var h = $(window).height();
+            $('.main-section .main-bg').css('height', h);
+            if (h > 640) {
+                $('#about-section').css('height', h - h * 0.13);
+            }
             $(window).resize(function () {
-                $('.main-section .main-bg').css('height', $(window).height());
-            //    $('#about-section').css('height', $(window).height() - $(window).height() * 0.13);
+                $('.main-section .main-bg').css('height', h);
+                if (h > 640) {
+                    $('#about-section').css('height', h - h * 0.13);
+                }
+                //    $('#about-section').css('height', $(window).height() - $(window).height() * 0.13);
                 /*if ($('.timeline-cv').height() < $(window).height()) {
                  $('.bg-timeline-section').css('height', $(window).height());
                  }else {
@@ -420,7 +421,7 @@
 
         $(window).on('load', function () {
             var $preloader = $('.page-preloader');
-                    //$spinner   = $preloader.find('.spinner');
+            //$spinner   = $preloader.find('.spinner');
             //$spinner.fadeOut();
             $preloader.delay(550).fadeOut('slow');
             $preloader.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function (e) {

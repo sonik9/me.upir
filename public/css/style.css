@@ -441,9 +441,9 @@ a:hover {
 }
 
 .main-section .main-about {
-    flex: 1 1 45%;
+    flex: 1 1 400px;
     /*margin-left: -130px;*/
-    margin-left: -15%;
+    margin-left: -10%;
     /*padding-top: 5%;*/
     padding-right: 50px;
 }
@@ -460,7 +460,7 @@ a:hover {
 .main-section .main-about .container {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-around;
     padding: 0px 30px 0 40px;
     height: 100%;
     /*background-color: rgba(0, 0, 0, 0.7);*/
@@ -474,12 +474,12 @@ a:hover {
 
 }
 
-.main-section .main-about .container h2 {
-    padding-top: 40px;
+.main-section .main-about .container .header-block h2 {
+    /*padding-top: 40px;*/
     font-weight: 100;
 }
 
-.main-section .main-about .container > h2 > span {
+.main-section .main-about .container .header-block > h2 > span {
     font-weight: bold;
 }
 
