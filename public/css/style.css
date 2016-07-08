@@ -4,7 +4,7 @@
 
 /*------------------------------------------------------------------
     Main styles
-    color: #ff00f5;  #d80dfb   links,borders var(--btn-color)
+    color: #ff00f5;  #d80dfb   links,borders #4B8AB1
 -------------------------------------------------------------------*/
 :root {
     --btn-color: #4B8AB1; /*#657fff;*/
@@ -96,7 +96,7 @@ a:hover {
 .btn {
     position: relative;
     color: #fff;
-    border: 1px solid var(--btn-color);
+    border: 1px solid #4B8AB1;
     height: 15px;
     padding: 15px 20px;
     font-family: 'Lato', sans-serif;
@@ -124,7 +124,7 @@ a:hover {
 
 .btn:hover {
     color: #ffffff;
-    background-color: var(--btn-color);
+    background-color: #4B8AB1;
 }
 
 .btn a:active, a:focus {
@@ -194,7 +194,7 @@ a:hover {
 
 .input-group .form-control {
     border: 0;
-    background-image: linear-gradient(var(--btn-color), var(--btn-color)), linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#4B8AB1, #4B8AB1), linear-gradient(#D2D2D2, #D2D2D2);
     background-size: 0 2px, 100% 1px;
     background-repeat: no-repeat;
     background-position: center bottom, center calc(100% - 1px);
@@ -207,18 +207,18 @@ a:hover {
 
 .input-group.is-focused .form-control {
     outline: none;
-    background-image: linear-gradient(var(--btn-color), var(--btn-color)), linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#4B8AB1, #4B8AB1), linear-gradient(#D2D2D2, #D2D2D2);
     background-size: 100% 2px, 100% 1px;
     box-shadow: none;
     transition-duration: 0.6s;
 }
 
 .input-group.is-focused .input-control .material-input:after {
-    background-color: var(--btn-color);
+    background-color: #4B8AB1;
 }
 
 .input-group.is-focused .input-label {
-    color: var(--btn-color);
+    color: #4B8AB1;
 }
 
 /*------------------------------------------------------------------
@@ -307,7 +307,7 @@ a:hover {
 
 .active {
     text-decoration: none !important;
-    color: var(--btn-color) !important;
+    color: #4B8AB1 !important;
 }
 
 /*section general*/
@@ -390,7 +390,7 @@ a:hover {
 }
 
 .main-photo .btn-main-photo-slide:hover {
-    background-color: var(--btn-color);
+    background-color: #4B8AB1;
 }
 
 .main-bg .container {
@@ -433,11 +433,11 @@ a:hover {
 
 .main-section .social-network li a:not(.btn) {
     /*color: #4B8AB1;*/
-    color: var(--btn-color);
+    color: #4B8AB1;
 }
 
 .main-section .social-network li a:not(.btn):hover {
-    color: var(--a-hover-color) !important;
+    color: grey !important;
 }
 
 .main-section .main-about {
@@ -449,12 +449,12 @@ a:hover {
 }
 
 .main-section .main-about a {
-    color: var(--a-intext-color);
+    color: #4B8AB1;
     text-decoration: underline;
 }
 
 .main-section .main-about a:hover {
-    color: var(--a-hover-color) !important;
+    color: grey !important;
 }
 
 .main-section .main-about .container {
@@ -475,7 +475,7 @@ a:hover {
 }
 
 .main-section .main-about .container .header-block h2 {
-    /*padding-top: 40px;*/
+    padding-top: 40px;
     font-weight: 100;
 }
 
@@ -645,7 +645,7 @@ a:hover {
 .project-section .container .project-block .project-image {
     width: 300px;
     height: 300px;
-    background-image: url('http://placehold.it/300');
+    background-image: url('../images/cover300.png');
     background-repeat: no-repeat;
     background-size: contain;
     /*box-shadow: 0px 0px 0px 0px grey inset;*/
@@ -727,7 +727,7 @@ a:hover {
 }
 
 .skill-section .container .skills-block > div .skill-tag {
-    background-color: var(--btn-color);
+    background-color: #4B8AB1;
     border-radius: 3px;
     margin: 2px 5px 2px 5px;
     padding: 0px 8px 1px 8px;
@@ -844,7 +844,7 @@ footer .social-network > li span {
 }
 
 footer .social-network li a:not(.btn) {
-    color: var(--btn-color);
+    color: #4B8AB1;
 }
 
 footer .footer-copyright p {
@@ -861,7 +861,7 @@ footer h4 {
 }
 
 footer .line-lg span {
-    border-bottom: 1px solid var(--btn-color);
+    border-bottom: 1px solid #4B8AB1;
 }
 
 footer a:hover {
