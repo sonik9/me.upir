@@ -193,13 +193,17 @@ var MyMailer = function MyMailer(data, url) {
     }
 };*/
 MyMailer.prototype.sendMail = function () {
-    
+
     $.ajax({
         type: "POST",
         url: this.url,
         data: this.data,
         success: function (msg) {
             console.log("Прибыли данные: " + msg);
+            alert("Yor message was send!\nThank you");
+        },
+        fail:function (e) {
+            alert("Error(");
         }
     });
 };
