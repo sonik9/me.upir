@@ -20,7 +20,7 @@ var smtpConfig = {
 var smtpTransport = mailer.createTransport(smtpConfig);
 
 router.post('/mailer', function(req, res, next) {
-    res.send('it was sended');
+
   console.log(req.body);
     var mailOptions={
         from:"My own site",
@@ -44,9 +44,11 @@ router.post('/mailer', function(req, res, next) {
         }else{
             smtpTransport.sendMail(mailOptions, function(error, response){
                 if(error){
+                    res.send('msg send error');
                     return console.log(error);
 
                 }else{
+                    res.send('it was sended');
                     return console.log("Message sent: " + response.message);
                 }
             });
