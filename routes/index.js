@@ -20,6 +20,7 @@ var smtpConfig = {
 var smtpTransport = mailer.createTransport(smtpConfig);
 
 router.post('/mailer', function(req, res, next) {
+    res.send('it was sended');
   console.log(req.body);
     var mailOptions={
         from:"My own site",
