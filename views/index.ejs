@@ -406,13 +406,13 @@
                 typeOfTimeline: "default",
                 typeOfView: "horizontal",
                 created: function (e, el) {
-                    var rippleButton = new RippleButton();
-                    rippleButton.init();
+                    /*var rippleButton = new RippleButton();
+                    rippleButton.init();*/
                 }
             })
 
         }).fail(function () {
-            console.log("error");
+           alert("I'm sorry something went bad way! \nPlease restart page! ");
 
         }).always(function () {
             if ($('.timeline').height() < $(window).height()) {
