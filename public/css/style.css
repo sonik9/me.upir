@@ -551,7 +551,7 @@ a:hover {
     flex-flow: row wrap;
     justify-content: space-around;
     width: 100%;
-    margin: 100px 100px 0 100px;
+    margin: 60px 100px 0 100px;
 
 }
 
@@ -634,7 +634,7 @@ a:hover {
     flex-flow: row wrap;
     justify-content: space-around;
     width: 100%;
-    margin: 100px 100px 0 100px;
+    margin: 60px 100px 0 100px;
 
 }
 
@@ -653,7 +653,8 @@ a:hover {
 }
 
 .project-section .container .project-block > div:not(.project-image) {
-    margin: 2% 5% 2% 5%;
+    /*margin: 2% 5% 2% 5%;*/
+    margin: 40px 70px 40px 70px;
     /*overflow: hidden;*/
 }
 
@@ -684,7 +685,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 .skill-section .container .skills-block {
-    margin: 100px 100px 0 100px;
+    margin: 60px 100px 0 100px;
 }
 .skill-section .container .skills-block .skills-container {
     display: flex;
@@ -696,7 +697,7 @@ a:hover {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
-    padding: 5%;
+    padding: 0 5% 70px;
 }
 
 .skill-section .container .skills-block > div > ul > div {
@@ -766,7 +767,7 @@ a:hover {
 }
 
 .contact-section .container .contact-block {
-    padding: 0% 10% 0% 10%;
+    margin: 100px 100px 100px 100px;
 }
 
 .contact-section .container .contact-block > form {
