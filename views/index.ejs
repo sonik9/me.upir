@@ -324,7 +324,7 @@
 </footer>
 
 <script src="js/vendor/jQuery/jquery-1.12.3.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD1OiFyXKfa5SSijRXaRLfe4rfOeOTFag"></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD1OiFyXKfa5SSijRXaRLfe4rfOeOTFag"></script>-->
 <script src="js/main.js"></script>
 <script src="js/vendor/timelineCV/dist/jquery.timelineCV-0.2.1.js"></script>
 <script>
@@ -412,8 +412,6 @@
             })
             $(window).on('load', function () {
                 var $preloader = $('.page-preloader');
-                //$spinner   = $preloader.find('.spinner');
-                //$spinner.fadeOut();
                 $preloader.delay(550).fadeOut('slow');
                 $preloader.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function (e) {
                     $(this).remove();
