@@ -166,8 +166,8 @@ $.getJSON("/files/resume.json", function (data) {
         typeOfTimeline: "default",
         typeOfView: "horizontal",
         created: function (e, el) {
-            /*var rippleButton = new RippleButton();
-             rippleButton.init();*/
+            var rippleButton = new RippleButton();
+             rippleButton.init();
         }
     })
 
@@ -217,4 +217,7 @@ $('#sendMessage').on('click',function () {
     var form = this.closest('form');
     var mail = new MyMailer($(form).serialize(),$(form).attr('action'));
     mail.init();
+});
+$('.language-btn').on('click',function (e) {
+    $('.modal').toggleClass('is-show');
 });
