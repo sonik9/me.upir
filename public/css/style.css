@@ -15,7 +15,8 @@
 body {
     /*font: 15px 'Raleway', sans-serif;*/
     font: 15px 'Open Sans';
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
+    -webkit-box-direction: column;
     flex-direction: column;
     /*flex-wrap: wrap;*/
 
@@ -151,7 +152,7 @@ a:hover {
 
 /*Input group*/
 .input-group {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     /*min-width: 300px;
     max-width: 500px;*/
     margin: 15px;
@@ -160,7 +161,7 @@ a:hover {
 }
 
 .input-group .input-group-addon {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 0 10px 0 10px;
@@ -226,7 +227,7 @@ a:hover {
 
 .modal{
     position: absolute;
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     height: 500px;
     width: 500px;
     background-color: green;
@@ -237,7 +238,7 @@ a:hover {
     z-index: 10;
 }
 .modal.is-show{
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
 
 }
 /*------------------------------------------------------------------
@@ -261,7 +262,7 @@ a:hover {
     -o-transition: all 350ms ease 0s;
     -ms-transition: all 150ms ease 0s;
     transition: all 350ms ease 0s;
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
@@ -283,7 +284,7 @@ a:hover {
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     letter-spacing: 1.3px;
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
@@ -363,7 +364,7 @@ a:hover {
     height: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     color: #ffffff;
@@ -371,7 +372,7 @@ a:hover {
 }
 
 .main-section .container {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: column;
     justify-content: flex-end;
     align-items: center;
@@ -477,7 +478,7 @@ a:hover {
 }
 
 .main-section .main-about .container {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     padding: 0px 30px 0 40px;
@@ -553,19 +554,19 @@ a:hover {
 
 /*CV-section*/
 .cv-section {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     justify-content: center;
 }
 
 .cv-section .container {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: column;
     align-items: center;
     width: 100%;
 }
 
 .cv-section .container .cv-block {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     width: 100%;
@@ -595,7 +596,7 @@ a:hover {
 }
 
 .cv-section .container .cv-block .cv-desc {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: space-around;
@@ -617,7 +618,7 @@ a:hover {
 
 .timeline-section .container {
     background-color: rgba(0, 0, 0, 0.7);
-    /*  display: flex;
+    /* display:-webkit-flex;     display: -webkit-box;     display: flex;
       flex-flow: row wrap;
       justify-content: center;*/
     height: 100%;
@@ -634,13 +635,12 @@ a:hover {
 
 /*project-section*/
 .project-section {
-
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     justify-content: center;
 }
 
 .project-section .container {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: column;
     align-items: center;
     width: 100%;
@@ -648,7 +648,7 @@ a:hover {
 }
 
 .project-section .container .project-block {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     width: 100%;
@@ -677,7 +677,7 @@ a:hover {
 }
 
 .project-section .container .project-block .project-desc {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: space-around;
@@ -694,7 +694,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
 }
 
 .skill-section .container {
@@ -706,13 +706,13 @@ a:hover {
     margin: 60px 100px 0 100px;
 }
 .skill-section .container .skills-block .skills-container {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
 .skill-section .container .skills-block > div > ul {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: column;
     align-items: flex-start;
     padding: 0 5% 70px;
@@ -723,7 +723,7 @@ a:hover {
 }
 
 .skill-section .container .skills-block > div > ul > li {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: row wrap;
     line-height: 30px;
     width: 100%;
@@ -736,7 +736,7 @@ a:hover {
     max-width: 350px;
     text-align: left;
     margin-right: 20px;
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     align-items: flex-end;
 }
 
@@ -774,7 +774,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
 
 }
 
@@ -789,7 +789,7 @@ a:hover {
 }
 
 .contact-section .container .contact-block > form {
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     width: 100%;
@@ -836,7 +836,7 @@ footer {
     width: 100%;
     color: #fff;
     text-align: left;
-    display: flex;
+   display:-webkit-flex;     display: -webkit-box;     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
@@ -997,13 +997,12 @@ footer .sections {
         position: fixed;
         font-size: 2em;
         color: #ffffff;
-        display: flex;
+       display:-webkit-flex;     display: -webkit-box;     display: flex;
         align-items: center;
         cursor: pointer;
         background-color: #2f2f2f;
         opacity: 0.9;
         z-index: 3;
-        display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
     }
@@ -1033,7 +1032,7 @@ footer .sections {
         -ms-transition: all 150ms ease 0s;
         transition: all 750ms ease 0s;
         height: 100%;
-        display: flex;
+       display:-webkit-flex;     display: -webkit-box;     display: flex;
         justify-content: center;
         align-items: center;
     }
