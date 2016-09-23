@@ -8,6 +8,11 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'UPIR.ME' , name:'Vitalii Upir Page'});
 
 });
+
+router.get('/react-redux',function (req,res,next) {
+    res.render('react',{});
+});
+
 var smtpConfig = {
     host: 'smtp.gmail.com',
     port: 465,
